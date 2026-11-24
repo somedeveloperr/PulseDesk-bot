@@ -22,7 +22,7 @@ def cmd_start(message):
 
     bot.send_message(
         chat_id,
-        "Привет! Это бот **LeadPulse**.\n"
+        "Привет! Это бот **PulseDesk**.\n"
         "Я помогу быстро передать вашу задачу менеджеру.\n\n"
         "Нажмите кнопку ниже, чтобы начать:",
         parse_mode="Markdown",
@@ -70,7 +70,7 @@ def process_contact(message):
 
     # Формируем карточку заявки для тебя (админа)
     admin_text = (
-        "📥 **Новая заявка из LeadPulse**\n\n"
+        "📥 **Новая заявка из PulseDesk**\n\n"
         f"👤 **Имя:** {data['name']}\n"
         f"📝 **Задача:** {data['task']}\n"
         f"📞 **Контакт:** {data['contact']}\n"
